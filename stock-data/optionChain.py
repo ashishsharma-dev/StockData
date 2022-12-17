@@ -15,4 +15,4 @@ cookies = dict(request.cookies)
 response = session.get(URL, headers=headers, cookies=cookies).json()
 
 rawdata = pd.DataFrame(response)
-print(len(rawdata['records']['data']))
+print(pd.DataFrame(rawdata["records"]["data"]))
